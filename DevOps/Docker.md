@@ -1,7 +1,7 @@
 # Docker Interview questions 
 
 
-## Docker Architecture  
+## Architecture  
 
 
 <p align="center">
