@@ -12,7 +12,7 @@
 
 __1) What is Docker, and how does it differ from traditional virtualization?__
 ```yaml  
-Docker is a platform that allows developers to create, deploy, and run applications in containers.
+Docker is a tool  that allows developers to create, deploy, and run applications in the form of containers.
 
 difference ===> 
 - docker can not required multiple dependencies or libraries to run but for running perating systems we required multiple dependencies and libraries.  
@@ -32,4 +32,18 @@ __2) Explain the key components of Docker's architecture?__
 - Docker Registry :- These are are the storage images which are available publically..
 
 ```  
+
+
+__3)  What are Docker containers, and how do they work?   
+```yaml 
+docker containers are lightweight unit which contains all required packages which are needed for running the application.
+because of containers we are not depend on single server. we deploy our application in the form of microservices.
+
+```  
+How They work --> 
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/066490b4-3a76-415d-8dc8-37e47320e531" width="600" title="Architecture" alt="Architecture">
+  </p>
+  
 
