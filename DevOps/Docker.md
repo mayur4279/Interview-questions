@@ -56,7 +56,14 @@ we can create docker images with the help of Dockerfiles and its instuctions.
 
 some key instructions in dockerfile are:-
 
-FROM :- we specifies the base images from this 
+FROM :- we specifies the base images from this. every image building process start from this instruction.
+### FROM  nginx:latest   <name and tag>  
+
+RUN :- For executing the command in the images
+### RUN apt update -y 
+
+COPY :- suppose if we want to copy the files from host machine in this case we use this instruction
+### COPY .  .
 
 
 ```  
