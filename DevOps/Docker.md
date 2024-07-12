@@ -34,7 +34,7 @@ __2) Explain the key components of Docker's architecture?__
 ```  
 
 
-__3)  What are Docker containers, and how do they work?   
+__3)  What are Docker containers, and how do they work?__  
 ```yaml 
 docker containers are lightweight unit which contains all required packages which are needed for running the application.
 because of containers we are not depend on single server. we deploy our application in the form of microservices.
