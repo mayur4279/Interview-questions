@@ -15,10 +15,21 @@ __1) What is Docker, and how does it differ from traditional virtualization?__
 Docker is a platform that allows developers to create, deploy, and run applications in containers.
 
 difference ===> 
-- Operating systems required multiple dependencies and libraries to run, but in docker case we can not required multiple dependencies as reason this are lightweight.
+- docker can not required multiple dependencies or libraries to run but for running perating systems we required multiple dependencies and libraries.  
 - operating systems required seperated kernal for running, but in docker case it runs of host kernel means for running docker images we cannot required seperat kernel.
 - only runtime libraries are installed thats why it cannot consume extra storage.
-
 ```  
 
+
+
+__2) Explain the key components of Docker's architecture?__
+
+```yaml
+- Docker client :- With the help of the docker client, the docker users can interact with the docker. The docker command uses the Docker API.
+- Docker engine/daemon :- Its Responsible for creating images and managing the containers. 
+- Docker images :- Are the templates for the containers.  it contains all required packages or the libraries which is required for running the application.
+- Docker containers :- When we run the images it beacmes the container. its like a process of linux os.
+- Docker Registry :- These are are the storage images which are available publically..
+
+```  
 
