@@ -47,3 +47,16 @@ How They work -->
   </p>
   
 
+
+__4) How do you create a Docker image? Can you explain the Dockerfile and its significance?__  
+
+
+```yaml
+we can create docker images with the help of Dockerfiles and its instuctions.
+
+some key instructions in dockerfile are:-
+
+FROM :- we specifies the base images from this 
+
+
+```  
