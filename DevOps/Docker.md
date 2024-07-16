@@ -72,7 +72,7 @@ its the first instruction  for building the application
 Syntax:- RUN <command>  
 Example:- RUN echo "this is my website" >>  /usr/share/nginx/html/index.html 
           RUN apt-get update && apt-get install -y apache2
-		  
+
 why we use??  
 -The RUN instruction in a Dockerfile is used to execute commands during the image build process. These commands can be used for various purposes...
 *Copying files
