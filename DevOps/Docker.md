@@ -82,10 +82,7 @@ why we use??
 - We can run multiple RUN instructions to execute sequence of commands.  
 - Or we can use below option as well for running multiple commands using RUN instruction 
 
-RUN <<EOF
-apt-get update
-apt-get install -y curl
-EOF
+RUN apt get -y update  
 
 -----------------------------
 3) EXPOSE 
