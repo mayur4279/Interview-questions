@@ -8,7 +8,7 @@ Create IAM users and assign policies as per requirement. This is how we can cont
 
 ---
 
-## 2. Explain the difference between an AWS user, group, role, and policy.
+### 2. Explain the difference between an AWS user, group, role, and policy.
 
 **AWS User:** An identity representing a person or service interacting with AWS resources. 
 
@@ -24,7 +24,7 @@ Create IAM users and assign policies as per requirement. This is how we can cont
 
 ---
 
-## 3. What are the best practices for creating and managing IAM users in AWS?
+### 3. What are the best practices for creating and managing IAM users in AWS?
 
 1. Set a custom password policy for IAM users using the root account (strong password policy).
    - IAM service → Account settings → Edit → Custom.
@@ -35,7 +35,7 @@ Create IAM users and assign policies as per requirement. This is how we can cont
 
 ---
 
-## 4. How do you enable multi-factor authentication (MFA) for AWS IAM users?
+### 4. How do you enable multi-factor authentication (MFA) for AWS IAM users?
 
 1. Go to IAM service.
 2. Select the user.
@@ -44,7 +44,7 @@ Create IAM users and assign policies as per requirement. This is how we can cont
 
 ---
 
-## 5. Describe the process of setting up cross-account access in AWS IAM.
+### 5. Describe the process of setting up cross-account access in AWS IAM.
 
 
                 Source account           --->          target account 
@@ -126,13 +126,13 @@ Create IAM users and assign policies as per requirement. This is how we can cont
 ---
 
 
-## 6. What is AWS Identity Federation, and how does it work with IAM?
+### 6. What is AWS Identity Federation, and how does it work with IAM?
 
 AWS Identity Federation allows users to access AWS resources using external identity providers (IdPs) like Google, Facebook, or corporate directories. It works by using the IdP to authenticate users and then providing them with temporary AWS credentials via AWS STS.
 
 ---
 
-## 7. Explain the differences between IAM policies and resource-based policies in AWS.
+### 7. Explain the differences between IAM policies and resource-based policies in AWS.
 
 **IAM Policies:** Policies attached directly to users, groups, and roles.
 
@@ -140,7 +140,7 @@ AWS Identity Federation allows users to access AWS resources using external iden
 
 ---
 
-## 8. How do you rotate access keys for IAM users, and why is key rotation important?
+### 8. How do you rotate access keys for IAM users, and why is key rotation important?
 
 1. Create a new access key.
 2. Update code and configurations with the new access key.
@@ -152,13 +152,13 @@ Key rotation is important to reduce the risk of compromised credentials and main
 
 ---
 
-## 9. What is AWS Cognito, and how does it relate to IAM in the context of user identity and authentication?
+### 9. What is AWS Cognito, and how does it relate to IAM in the context of user identity and authentication?
 
 AWS Cognito is a service that provides authentication, authorization, and user management for web and mobile applications. It helps in managing user pools and identity pools, and integrates with IAM to control access to AWS resources.
 
 ---
 
-## 10. Explain the concept of AWS Security Token Service (STS) and how it relates to temporary credentials in IAM.
+### 10. Explain the concept of AWS Security Token Service (STS) and how it relates to temporary credentials in IAM.
 
 AWS STS is a service used for requesting  temporary credentials for AWS IAM users. 
 These credentials are used to securely access AWS resources for a limited time.
@@ -167,7 +167,7 @@ For more details refer 5th question..
 
 ---
 
-## 11. What are the limits for managed or custom managed policies and inline policies?
+### 11. What are the limits for managed or custom managed policies and inline policies?
 
 **Managed or Custom Managed Policies:** Up to 10 managed policies can be attached to a user, group, or role.
 
@@ -175,7 +175,7 @@ For more details refer 5th question..
 
 ---
 
-## 12. What is a trusted entity in AWS?
+### 12. What is a trusted entity in AWS?
 
 we can Assign the roles to the trusted entities like aws account, services && IAM users.  
 Trusted entities are defined in the trust policy attached to the IAM role.
@@ -184,7 +184,7 @@ Assume role :- "Assume Role" in AWS means allowing one entity (like a user, serv
 
 ---
 
-## 13. Can you provide an example of a complex IAM scenario you've encountered in AWS and how you resolved it?
+### 13. Can you provide an example of a complex IAM scenario you've encountered in AWS and how you resolved it?
 
 **I created s3 bucket and gave access to only one user using inline policy**
 
@@ -237,7 +237,7 @@ Assume role :- "Assume Role" in AWS means allowing one entity (like a user, serv
 
 ---
 
-## 14. Your organization is concerned about security breaches due to compromised AWS access keys. How would you implement a secure access key rotation strategy for IAM users?
+### 14. Your organization is concerned about security breaches due to compromised AWS access keys. How would you implement a secure access key rotation strategy for IAM users?
 
 1. Create new access keys.
 2. Update applications and scripts to use the new keys.
@@ -249,7 +249,7 @@ Additionally, enforce MFA and implement logging and monitoring to detect any una
 
 ---
 
-## 15. Your organization is migrating on-premises applications to AWS. How would you ensure a seamless transition for user authentication and authorization using AWS IAM?
+### 15. Your organization is migrating on-premises applications to AWS. How would you ensure a seamless transition for user authentication and authorization using AWS IAM?
 
 
 1. first, i will create users
@@ -258,7 +258,7 @@ Additionally, enforce MFA and implement logging and monitoring to detect any una
 4. monitoration of all users using cloudtrail.  
 ---
 
-## 16. Your organization has adopted AWS Organizations to manage multiple AWS accounts. How would you enforce IAM best practices and policies across these accounts efficiently?
+### 16. Your organization has adopted AWS Organizations to manage multiple AWS accounts. How would you enforce IAM best practices and policies across these accounts efficiently?
 
 
 1. Create seperate Centralize IAM management for service.
