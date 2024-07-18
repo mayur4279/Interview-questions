@@ -57,7 +57,7 @@ Create IAM users and assign policies as per requirement. This is how we can cont
    - Mayur@4279  
    - **&& Assign All Administrator access policy.**
 
-<br/>
+   <br> 
 
    - **Source account credentials**
    - https://975050134708.signin.aws.amazon.com/console
