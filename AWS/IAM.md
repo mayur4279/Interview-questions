@@ -77,7 +77,7 @@ Create IAM users and assign policies as per requirement. This is how we can cont
    - Attach Policies to the Role
      - Choose the permissions you want to grant to the role.
      - You can select AWS managed policies or create a custom policy.
-     - For example, to allow full access to S3, attach theAmazonS3 FullAccess policy.
+     - For example, to allow full access to ec2, attach ec2FullAccess policy.
    - Complete the Role Creation
      - Provide a name and description for the role. - Review and create the role.
     
@@ -100,7 +100,6 @@ Create IAM users and assign policies as per requirement. This is how we can cont
    aws sts assume-role --role-arn arn:aws:iam::975050134708:role/ec2fullaccess --role-session-name mysession
    ```
 
-   **Note: we can access  ec2service using source account without attaching any policy.**
 
    - results
      <p align="center">
@@ -120,6 +119,7 @@ Create IAM users and assign policies as per requirement. This is how we can cont
      <img src="https://github.com/user-attachments/assets/a5292290-1666-4586-ae79-96228dc0c71a" width="400" title="Architecture" alt="Architecture">
      </p>
 
+**Note: Now we can Access  ec2service using source account with the help of target account** 
 
 ---
 
