@@ -1,6 +1,6 @@
 # AWS Identity and Access Management (IAM)
 
-__1. How do you control access to AWS services and resources using IAM?__
+### 1. How do you control access to AWS services and resources using IAM?__
 
 Create IAM users and assign policies as per requirement. This is how we can control the access of AWS services and resources.  
 
