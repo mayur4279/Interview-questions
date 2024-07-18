@@ -92,8 +92,9 @@ Create IAM users and assign policies as per requirement. This is how we can cont
    -	Give name and create the policy 
 
 4. Navigate to source account and open cloudshell
-   - Use following command to  get credentials from another account…
-     
+   - In the source account, use the AWS STS `AssumeRole` API to get temporary credentials for the target account.
+   - use following command
+   <br> 
    ```bash
    aws sts assume-role --role-arn arn:aws:iam::975050134708:role/ec2fullaccess --role-session-name mysession
    ```
