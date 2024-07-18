@@ -4,6 +4,8 @@
 
 ## Common Questions
 
+---
+
 ### What is Docker, and how does it differ from traditional virtualization?
 
 - **Docker**: Docker is a platform for developing, shipping, and running applications using containerization.
