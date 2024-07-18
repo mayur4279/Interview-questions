@@ -30,7 +30,7 @@
    - Based on my research and the responsibilities of the position, I am looking for a salary in the range of [your salary range]. I am flexible and open to discussing the total compensation package, including benefits and opportunities for advancement.
 
 ### 10. What are your short-term goals?
-    - My short-term goal is to enhance my skills in [specific area relevant to the role] and contribute effectively to the team's objectives. I plan to pursue relevant certifications and training to support this goal.
+   - My short-term goal is to enhance my skills in [specific area relevant to the role] and contribute effectively to the team's objectives. I plan to pursue relevant certifications and training to support this goal.
 
 ### 11. What are your long-term goals?
-    - In the long term, I aim to [describe long-term career aspirations]. I am committed to continuous learning and professional development to achieve these goals and contribute to the organization's success.
+   - In the long term, I aim to [describe long-term career aspirations]. I am committed to continuous learning and professional development to achieve these goals and contribute to the organization's success.
