@@ -158,7 +158,10 @@ AWS Cognito is a service that provides authentication, authorization, and user m
 
 ## 10. Explain the concept of AWS Security Token Service (STS) and how it relates to temporary credentials in IAM.
 
-AWS STS is a web service that enables you to request temporary, limited-privilege credentials for AWS IAM users or federated users. These credentials are used to securely access AWS resources for a limited time.
+AWS STS is a service used for requesting  temporary credentials for AWS IAM users. 
+These credentials are used to securely access AWS resources for a limited time.
+
+For more details refer 5th question.. 
 
 ---
 
@@ -178,10 +181,11 @@ A trusted entity is an AWS account, IAM user, or role that is permitted to assum
 
 ## 13. Can you provide an example of a complex IAM scenario you've encountered in AWS and how you resolved it?
 
-I created s3 bucket and gave access to only one user using inline policy  
+**I created s3 bucket and gave access to only one user using inline policy**
 
 1. bucket is created using root account ( and put acl's disable and public access also disabled ) 
-2. created a inline policy for normal IAm user byu following json code
+2. created a inline policy for normal IAM user using following json code.
+   
    ```json
    {
 	"Version": "2012-10-17",
@@ -219,13 +223,11 @@ I created s3 bucket and gave access to only one user using inline policy
     }
    ```  
 
-3. Now the IAM user only see the content of "mayurs3bucketnamedddboyyyyy" bucket.
+4. Now the IAM user only see the content of "mayurs3bucketnamedddboyyyyy" bucket.
 
      <p align="center">
      <img src="https://github.com/user-attachments/assets/5c7c98bf-0396-44da-8bc6-ca26c014a378" width="600" title="Architecture" alt="Architecture">
      </p>
-
-
 
 
 ---
