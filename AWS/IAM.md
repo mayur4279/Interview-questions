@@ -178,12 +178,55 @@ A trusted entity is an AWS account, IAM user, or role that is permitted to assum
 
 ## 13. Can you provide an example of a complex IAM scenario you've encountered in AWS and how you resolved it?
 
-**Scenario:** An application needed to access S3 buckets in multiple accounts for data processing.
+I created s3 bucket and gave access to only one user using inline policy  
 
-**Resolution:**
-1. Created IAM roles in each target account with permissions to access S3 buckets.
-2. Configured the application's IAM role to assume the target account roles using AWS STS.
-3. Implemented a Lambda function to automate role assumption and data access operations.
+1. bucket is created using root account ( and put acl's disable and public access also disabled ) 
+2. created a inline policy for normal IAm user byu following json code
+   ```json
+   {
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "VisualEditor0",
+			"Effect": "Allow",
+			"Action": [
+				"s3:ListTagsForResource",
+				"s3:ListBucketMultipartUploads",
+				"s3:ListAccessGrants",
+				"s3:ListBucketVersions",
+				"s3:ListBucket",
+				"s3:ListAccessGrantsLocations",
+				"s3:ListMultipartUploadParts"
+			],
+			"Resource": "arn:aws:s3:::mayurs3bucketnamedddboyyyyy"
+		},
+		{
+			"Sid": "VisualEditor1",
+			"Effect": "Allow",
+			"Action": [
+				"s3:ListStorageLensConfigurations",
+				"s3:ListAccessPointsForObjectLambda",
+				"s3:ListAllMyBuckets",
+				"s3:ListAccessPoints",
+				"s3:ListAccessGrantsInstances",
+				"s3:ListJobs",
+				"s3:ListMultiRegionAccessPoints",
+				"s3:ListStorageLensGroups"
+			],
+			"Resource": "*"
+		}
+	 ]
+  }
+
+3. Now the IAM user only see the content of "mayurs3bucketnamedddboyyyyy" bucket.
+
+     <p align="center">
+     <img src="https://github.com/user-attachments/assets/5c7c98bf-0396-44da-8bc6-ca26c014a378" width="400" title="Architecture" alt="Architecture">
+     </p>
+
+
+   ```
+
 
 ---
 
@@ -201,19 +244,18 @@ Additionally, enforce MFA and implement logging and monitoring to detect any una
 
 ## 15. Your organization is migrating on-premises applications to AWS. How would you ensure a seamless transition for user authentication and authorization using AWS IAM?
 
-1. Use AWS Directory Service to integrate on-premises Active Directory with AWS.
-2. Implement AWS Single Sign-On (SSO) for unified access management.
-3. Use IAM roles and policies to manage permissions based on existing on-premises roles.
-4. Test thoroughly to ensure all users have the appropriate access and that authentication is working correctly.
 
+1. first, i will users
+2. Second, i will create seperate groups for the users. 
+3. third, based on exiting on-primises roles i will assign them policies such as for the group of developers i will only give the access of ec2 service.  
+4. monitoration of all users using cloudtrail.  
 ---
 
 ## 16. Your organization has adopted AWS Organizations to manage multiple AWS accounts. How would you enforce IAM best practices and policies across these accounts efficiently?
 
-1. Use Service Control Policies (SCPs) to enforce permission boundaries at the organization level.
-2. Centralize IAM management using AWS Organizations.
-3. Implement AWS Control Tower to automate the setup of a secure and compliant multi-account environment.
-4. Regularly review and audit IAM policies and permissions across all accounts.
-5. Use AWS Config and AWS CloudTrail for continuous monitoring and compliance checks.
+
+1. Create seperate Centralize IAM management for service.
+2. Add new policies day by day. 
+3. Our organization use  AWS CloudTrail for continuous monitoring and compliance checks.
 
 ---
