@@ -45,22 +45,22 @@ Create IAM users and assign policies as per requirement. This is how we can cont
 ## 5. Describe the process of setting up cross-account access in AWS IAM.
 
 
-                Source account            --->          target account 
+                Source account           --->          target account 
                                    wants to access        
 
 
-1. Create two IAM users known as  source account && target account
+1. **Create two IAM users known as  source account && target account**
    
-Target Account credentials
-https://975050134708.signin.aws.amazon.com/console  
-target-account  
-Mayur@4279  
-**&& Assign All Administrator access policy.**
+- **Target Account credentials**
+- https://975050134708.signin.aws.amazon.com/console  
+- target-account  
+- Mayur@4279  
+- **&& Assign All Administrator access policy.**
 
-source account credentials  
-https://975050134708.signin.aws.amazon.com/console
-source-account 
-Mayur@4279     
+- **Source account credentials**
+- https://975050134708.signin.aws.amazon.com/console
+- source-account 
+- Mayur@4279     
 **&& only Assign  {awscloudshellfullaccess } policy.   | for testing perpose |**
 
 2. Create an IAM Role in the Target Account
@@ -112,7 +112,7 @@ Mayur@4279
      </p>
 
      <p align="center">
-     <img src="https://github.com/user-attachments/assets/a5292290-1666-4586-ae79-96228dc0c71a" width="600" title="Architecture" alt="Architecture">
+     <img src="https://github.com/user-attachments/assets/a5292290-1666-4586-ae79-96228dc0c71a" width="400" title="Architecture" alt="Architecture">
      </p>
 
 
