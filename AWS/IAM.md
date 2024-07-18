@@ -103,7 +103,7 @@ Create IAM users and assign policies as per requirement. This is how we can cont
 
    - results
      <p align="center">
-     <img src="https://github.com/user-attachments/assets/4b073ed1-bcd5-4357-97b1-0aaa5504ede3" width="600" title="Architecture" alt="Architecture">
+     <img src="https://github.com/user-attachments/assets/4b073ed1-bcd5-4357-97b1-0aaa5504ede3" width="800" title="Architecture" alt="Architecture">
      </p>
   
 
@@ -229,7 +229,7 @@ Assume role :- "Assume Role" in AWS means allowing one entity (like a user, serv
 4. Now the IAM user only see the content of "mayurs3bucketnamedddboyyyyy" bucket.
 
      <p align="center">
-     <img src="https://github.com/user-attachments/assets/5c7c98bf-0396-44da-8bc6-ca26c014a378" width="600" title="Architecture" alt="Architecture">
+     <img src="https://github.com/user-attachments/assets/5c7c98bf-0396-44da-8bc6-ca26c014a378" width="800" title="Architecture" alt="Architecture">
      </p>
 
 
