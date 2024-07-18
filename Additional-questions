@@ -1,3 +1,4 @@
+```markdown
 # Technical Interview Questions
 
 ## System and Network Administration
@@ -203,3 +204,5 @@
 
 43. **What is a headless service in Kubernetes?**
     - A headless service is a type of service that does not have a cluster IP and is used for service discovery.
+
+```
