@@ -51,17 +51,17 @@ Create IAM users and assign policies as per requirement. This is how we can cont
 
 1. **Create two IAM users known as  source account && target account**
    
-- **Target Account credentials**
-- https://975050134708.signin.aws.amazon.com/console  
-- target-account  
-- Mayur@4279  
-- **&& Assign All Administrator access policy.**
-
-- **Source account credentials**
-- https://975050134708.signin.aws.amazon.com/console
-- source-account 
-- Mayur@4279     
-**&& only Assign  {awscloudshellfullaccess } policy.  --> for testing perpose**
+   - **Target Account credentials**
+   - https://975050134708.signin.aws.amazon.com/console  
+   - target-account  
+   - Mayur@4279  
+   - **&& Assign All Administrator access policy.**
+<br/>
+   - **Source account credentials**
+   - https://975050134708.signin.aws.amazon.com/console
+   - source-account 
+   - Mayur@4279     
+   - **&& only Assign  {awscloudshellfullaccess } policy.  --> for testing perpose**
 
 2. Create an IAM Role in the Target Account
 
@@ -82,12 +82,12 @@ Create IAM users and assign policies as per requirement. This is how we can cont
 
 3. Assign STS Inline policy for source account.  (Using root account ) 
 
--	Select the source account 
--	In permission click on Add permission 
--	Select create inline policy 
--	Select service = STS  
--	Click on ALL STS actions  && click on all resources 
--	Give name and create the policy 
+   -	Select the source account 
+   -	In permission click on Add permission 
+   -	Select create inline policy 
+   -	Select service = STS  
+   -	Click on ALL STS actions  && click on all resources 
+   -	Give name and create the policy 
 
 4. Navigate to source account and open cloudshell
    - Use following command to  get credentials from another account…
