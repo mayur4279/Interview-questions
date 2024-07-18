@@ -216,16 +216,16 @@ I created s3 bucket and gave access to only one user using inline policy
 			"Resource": "*"
 		}
 	 ]
-  }
+    }
+   ```  
 
 3. Now the IAM user only see the content of "mayurs3bucketnamedddboyyyyy" bucket.
 
      <p align="center">
-     <img src="https://github.com/user-attachments/assets/5c7c98bf-0396-44da-8bc6-ca26c014a378" width="400" title="Architecture" alt="Architecture">
+     <img src="https://github.com/user-attachments/assets/5c7c98bf-0396-44da-8bc6-ca26c014a378" width="600" title="Architecture" alt="Architecture">
      </p>
 
 
-   ```
 
 
 ---
