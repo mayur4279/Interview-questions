@@ -44,11 +44,80 @@ Create IAM users and assign policies as per requirement. This is how we can cont
 
 ## 5. Describe the process of setting up cross-account access in AWS IAM.
 
-1. Create an IAM role in the target account and specify the trusted accounts that can assume the role.
-2. Attach policies to the role defining the permissions.
-3. In the source account, use the AWS STS `AssumeRole` API to get temporary credentials for the target account.
+
+                Source account            --->          target account 
+                                   wants to access        
+
+
+1. Create two IAM users known as  source account && target account
+   
+Target Account credentials
+https://975050134708.signin.aws.amazon.com/console  
+target-account  
+Mayur@4279  
+**&& Assign All Administrator access policy.**
+
+source account credentials  
+https://975050134708.signin.aws.amazon.com/console
+source-account 
+Mayur@4279     
+**&& only Assign  {awscloudshellfullaccess } policy.   | for testing perpose |**
+
+2. Create an IAM Role in the Target Account
+
+   - Sign in to the AWS Management Console in the target account.
+   - Navigate to the IAM console.
+   - Create a New Role.
+     - Go to the "Roles" section and click on "Create role".
+     - Select "Another AWS account" as the type of trusted entity.
+   - Specify the Trusted Accounts
+     - Enter the account ID (In this case select for this Aws account)
+   - Attach Policies to the Role
+     - Choose the permissions you want to grant to the role.
+     - You can select AWS managed policies or create a custom policy.
+     - For example, to allow full access to S3, attach theAmazonS3 FullAccess policy.
+   - Complete the Role Creation
+     - Provide a name and description for the role. - Review and create the role.
+    
+
+3. Assign STS Inline policy for source account.  (Using root account ) 
+
+-	Select the source account 
+-	In permission click on Add permission 
+-	Select create inline policy 
+-	Select service = STS  
+-	Click on ALL STS actions  && click on all resources 
+-	Give name and create the policy 
+
+4. Navigate to source account and open cloudshell
+   - Use following command to  get credentials from another account…
+   ```bash
+   aws sts assume-role --role-arn arn:aws:iam::975050134708:role/ec2fullaccess --role-session-name mysession
+   ```
+
+   **Note: we can access  ec2service using source account without attaching any policy.**
+
+   - **result**
+     <p align="center">
+     <img src="https://github.com/user-attachments/assets/4b073ed1-bcd5-4357-97b1-0aaa5504ede3" width="600" title="Architecture" alt="Architecture">
+     </p>
+  
+
+5. for graphically access...
+
+   Click on profile --> switch role  --> enter account Id  --> role name --> click on switch role.
+
+     <p align="center">
+     <img src="https://github.com/user-attachments/assets/97352231-756f-43a6-84ac-11620d0b2554" width="600" title="Architecture" alt="Architecture">
+     </p>
+
+     <p align="center">
+     <img src="https://github.com/user-attachments/assets/a5292290-1666-4586-ae79-96228dc0c71a" width="600" title="Architecture" alt="Architecture">
+     </p>
+
 
 ---
+
 
 ## 6. What is AWS Identity Federation, and how does it work with IAM?
 
