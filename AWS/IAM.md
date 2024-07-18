@@ -61,7 +61,7 @@ Create IAM users and assign policies as per requirement. This is how we can cont
 - https://975050134708.signin.aws.amazon.com/console
 - source-account 
 - Mayur@4279     
-**&& only Assign  {awscloudshellfullaccess } policy.   | for testing perpose |**
+**&& only Assign  {awscloudshellfullaccess } policy.  --> for testing perpose**
 
 2. Create an IAM Role in the Target Account
 
