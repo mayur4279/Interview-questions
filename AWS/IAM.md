@@ -175,8 +175,10 @@ For more details refer 5th question..
 
 ## 12. What is a trusted entity in AWS?
 
-we can give roles to the trusted entities like aws account, services, IAM users.  
+we can Assign the roles to the trusted entities like aws account, services && IAM users.  
 Trusted entities are defined in the trust policy attached to the IAM role.
+
+Assume role :- "Assume Role" in AWS means allowing one entity (like a user, service, or another AWS account) to temporarily take on the permissions of a different IAM role.
 
 ---
 
