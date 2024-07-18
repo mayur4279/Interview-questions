@@ -93,13 +93,14 @@ Create IAM users and assign policies as per requirement. This is how we can cont
 
 4. Navigate to source account and open cloudshell
    - Use following command to  get credentials from another account…
+     
    ```bash
    aws sts assume-role --role-arn arn:aws:iam::975050134708:role/ec2fullaccess --role-session-name mysession
    ```
 
    **Note: we can access  ec2service using source account without attaching any policy.**
 
-   - **result**
+   - results
      <p align="center">
      <img src="https://github.com/user-attachments/assets/4b073ed1-bcd5-4357-97b1-0aaa5504ede3" width="600" title="Architecture" alt="Architecture">
      </p>
