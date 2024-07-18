@@ -169,13 +169,14 @@ For more details refer 5th question..
 
 **Managed or Custom Managed Policies:** Up to 10 managed policies can be attached to a user, group, or role.
 
-**Inline Policies:** No limit on the number of inline policies that can be attached, but they should be used sparingly to maintain manageability.
+**Inline Policies:**  We can attach unlimited, no limit on this.  
 
 ---
 
 ## 12. What is a trusted entity in AWS?
 
-A trusted entity is an AWS account, IAM user, or role that is permitted to assume a role in a different account or within the same account. Trusted entities are defined in the trust policy attached to the IAM role.
+we can give roles to the trusted entities like aws account, services, IAM users.  
+Trusted entities are defined in the trust policy attached to the IAM role.
 
 ---
 
