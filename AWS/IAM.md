@@ -250,7 +250,7 @@ Additionally, enforce MFA and implement logging and monitoring to detect any una
 ## 15. Your organization is migrating on-premises applications to AWS. How would you ensure a seamless transition for user authentication and authorization using AWS IAM?
 
 
-1. first, i will users
+1. first, i will craete users
 2. Second, i will create seperate groups for the users. 
 3. third, based on exiting on-primises roles i will assign them policies such as for the group of developers i will only give the access of ec2 service.  
 4. monitoration of all users using cloudtrail.  
